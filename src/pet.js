@@ -81,13 +81,12 @@ function getRandomInt(min, max) {
 
   console.log("Opened Gather")
   const passwordinput = await page.$(".ot-password-input");
-  if (passwordinput == null) {
-    console.log("dafuq");
+  if (passwordinput != null) {
+    await passwordinput.type(config.gatherpw);
+    const passwordsubmit = await page.$(".ot-password-submit-button");
+    await passwordsubmit.click();
+    console.log("Entered password, waiting for name input")
   }
-  await passwordinput.type(config.gatherpw);
-  const passwordsubmit = await page.$(".ot-password-submit-button");
-  await passwordsubmit.click();
-  console.log("Entered password, waiting for name input")
 
   // enter name
   const nameinput = await page.waitForSelector("input.css-kvfr1h");
