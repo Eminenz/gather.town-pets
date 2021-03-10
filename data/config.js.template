@@ -1,0 +1,8 @@
+var config = module.exports = {};
+
+config.gatherserver = "gather.town server adress"
+config.gatherpw = "gather.town server password"
+config.npcname = "name of your npc"
+config.npcavatar = "initial string of your preferred avatar (without color). example: /images/characters/Christmas_Snowman"
+config.videofile = "path to y4m file for fake webcam. example: data/dog.y4m"
+config.audiofile = "path to wav file for fake microphone. example: data/silent.wav"
