@@ -5,7 +5,7 @@ on `gather.town` spaces.
 
 ## Usage
 
-Copy config.js.template to config.js and change the values to something you like.
+Copy `config.js.template` to `config.js` and change the values to something you like.
 To convert from .gif (or any other format readable by ffmpeg) to .y4m you can use convert_to_y4m.sh.
 
 To start the container call `./run_puppeteer_script.sh`.
